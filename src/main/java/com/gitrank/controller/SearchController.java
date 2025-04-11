@@ -1,8 +1,8 @@
 package com.gitrank.controller;
 
-import com.gitrank.model.SearchRequest;
-import com.gitrank.model.SearchResult;
-import com.gitrank.service.SearchService;
+import com.gitrank.model.GitHubSearchResponse;
+import com.gitrank.model.RepositorySearchRequest;
+import com.gitrank.service.RepositorySearchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*;
 public class SearchController {
 
     @Autowired
-    private SearchService searchService;
+    private RepositorySearchService searchService;
 
     @PostMapping
-    public ResponseEntity<SearchResult> searchRepositories(@RequestBody SearchRequest request) {
+    public ResponseEntity<GitHubSearchResponse> searchRepositories(@RequestBody RepositorySearchRequest request) {
         return ResponseEntity.ok(searchService.searchRepositories(request));
     }
 }

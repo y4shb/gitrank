@@ -12,9 +12,3 @@ public class SearchRequest {
     private RankingWeights weights = new RankingWeights();
 }
 
-@Data
-class RankingWeights {
-    private double stars = 0.5;
-    private double activity = 0.3;
-    private double contributors = 0.2;
-}
