@@ -8,7 +8,7 @@
 
 > **Your Code Compass for Navigating GitHub's Constellation of Repositories** 🌠
 
-**Current Project Status**: 🚧 Under Active Construction (Junior Devs with Coffee Fuel Welcome!) ☕
+**Current Project Status**: 🚧 Under Construction (MVP working, use GITHUB_TOKEN in application.properties) ☕
 
 ## Overview
 Gitrank is a smart backend service that helps developers discover the perfect GitHub repositories faster than you can say "merge conflict"! Built with Spring Boot, this system combines GitHub API integration with intelligent fallback mechanisms and (soon-to-come) caching superpowers.
